@@ -15,13 +15,13 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
 
   # s.add_dependency 'i18n', ['>= 0.6.4', '< 0.9']
-  s.add_dependency 'i18n', '~> 1.0'
+  s.add_dependency 'i18n', '~> 1.10.0'
 
-  s.add_development_dependency "bundler", "~> 2.1.4"
-  s.add_development_dependency "rake"
+  s.add_development_dependency "bundler", "~> 1.17.3"
+  s.add_development_dependency "rake", '~> 13.0.6'
   s.add_development_dependency "rspec", "~> 3.11.0"
   s.add_development_dependency "yard", "~> 0.9.28"
-  s.add_development_dependency "kramdown", "~> 2.4"
+  s.add_development_dependency "kramdown", "~> 1.17.0"
 
   s.files         = `git ls-files`.split($/)
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
